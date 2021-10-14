@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { exportedConst } from '../ESModule';
 
 // The following will work because we import from commonjs module
-// import { exportedConst } from '../../../CommonJSModule';
+// import { exportedConst } from '../CommonJSModule';
 
 test('basic test', async ({ page }) => {
   await page.goto('https://playwright.dev/');
