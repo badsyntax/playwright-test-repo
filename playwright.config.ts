@@ -1,7 +1,7 @@
 import { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  testDir: './src/tests/modules',
+  testDir: './tests',
   testMatch: '**/*.ts',
 };
 
