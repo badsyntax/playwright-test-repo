@@ -38,9 +38,11 @@ TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts" for /Users/
 
 ## Workaround
 
-@playwright/test doesn't support automatic typescript transpilation for esm modules so we need to manually compile ourselves.
+`@playwright/test` doesn't support automatic typescript transpilation for esm modules so we need to manually compile ourselves.
 
-Our compilation target module type MUST be `commonjs` UNLESS we change all our import paths (see <https://devblogs.microsoft.com/typescript/announcing-typescript-4-5-beta/#esm-nodejs>).
+Our [compilation target module](https://github.com/badsyntax/playwright-test-repo/blob/85ad27942cf9ba55dff4724d0d4b115747b5fcea/tests/tsconfig.json#L3) type MUST be `commonjs` UNLESS we change all our import paths (see <https://devblogs.microsoft.com/typescript/announcing-typescript-4-5-beta/#esm-nodejs>).
+
+Our [package type](https://github.com/badsyntax/playwright-test-repo/blob/85ad27942cf9ba55dff4724d0d4b115747b5fcea/package.json#L9) MUST be `commonjs` UNLESS we are compiling to ES modules.
 
 Run `npm run test:fix` to see the workaround:
 
