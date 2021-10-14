@@ -1,0 +1,14 @@
+{
+  "name": "esmodule",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "^16",
+    "npm": "^8"
+  },
+  "type": "module",  
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
