@@ -1,6 +1,6 @@
 # `@playwright/test` issue with ES modules
 
-An example repo showing issues when trying to important an ES Module from your `@playwright/test` test file and a workaround.
+An example repo showing issues when importing an ES Module in your `@playwright/test` test file, and a workaround.
 
 ## Getting Started
 
