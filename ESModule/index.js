@@ -1,1 +1,1 @@
-export const importFromEsModule = 'foo';
+export const exportedConst = 'foo';
